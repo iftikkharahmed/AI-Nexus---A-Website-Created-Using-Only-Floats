@@ -74,6 +74,10 @@ h1,h2,h3{
     color: rgba(121,137,212,1);
 }
 
+.bg-dark{
+    background-color: #263238;
+}
+
 .btn{
     display: inline-block;
     padding: 0.5em 1.5em;
@@ -110,20 +114,20 @@ h1,h2,h3{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.header .navbar{
+.navbar{
     padding: 1rem;
 }
 
-.header .navbar .logo{
+.navbar .logo{
     float: left;
 }
 
-.header .navbar .nav-items{
+.navbar .nav-items{
     float: right;
     margin-top: 0.7rem;
 }
 
-.header .navbar .nav-item{
+.navbar .nav-item{
     display: inline-block;
     padding: 1rem;
     text-transform: uppercase;
@@ -260,4 +264,122 @@ h1,h2,h3{
 
 .footer .social-media-links i{
     margin: 2rem;
+}
+
+
+/* ########################### about page styling ############################ */
+
+.about{
+    padding: 5rem 0;
+}
+
+.about-heading::after{
+    content: "";
+    display: block;
+    border: 3px solid #39395f;
+    width: 100%;
+}
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: "\2713";
+    padding-right: 1rem;
+    color: #39395f;
+    font-weight: bold;
+}
+
+/* ################## counts styling ######################### */
+
+.counts{
+    margin-top: 3rem;
+}
+
+.count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+
+.count-item span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #39395f;
+}
+
+.count-item p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ########################### cta banner styling #################### */
+
+.cta-banner{
+    background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121,137,212,1) 91.2% );
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #00000057;
+    margin-top: 3rem;
+}
+
+.cta-banner-left{
+    float: left;
+    width: 60%;
+}
+
+.cta-banner-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.cta-line{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 4px solid #fff;
+    padding: 0.3rem 2.5rem;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
 }
